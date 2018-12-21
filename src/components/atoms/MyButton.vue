@@ -1,5 +1,5 @@
 <template>
-  <button class="button is-primary" @click="onClick"><slot></slot></button>
+  <button class="button" @click="onClick"><slot></slot></button>
 </template>
 
 <script>
@@ -14,14 +14,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 button {
-  border: 1px solid #eee;
-  border-radius: 3px;
+  border: 1px solid #252525;
+  border-radius: 8px;
   background-color: #ffffff;
   cursor: pointer;
-  font-size: 15pt;
+  font-size: 15px;
   padding: 3px 10px;
-  margin: 10px;
 }
 </style>
