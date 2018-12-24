@@ -1,9 +1,9 @@
 <template>
   <textarea
-    @input="onInput"
     :value="value"
     :rows="rows"
     :placeholder="placeholder"
+    @input="onInput"
   />
 </template>
 
@@ -12,8 +12,7 @@ export default {
   name: "my-text-area",
   props: {
     value: {
-      type: String,
-      default: ""
+      type: String
     },
     rows: {
       type: Number,
@@ -24,8 +23,8 @@ export default {
     }
   },
   methods: {
-    onInput(newValue) {
-      this.$emit("input", newValue);
+    onInput(event) {
+      this.$emit("input", event.target.value);
     }
   }
 };

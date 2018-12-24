@@ -24,8 +24,8 @@ export default {
     }
   },
   methods: {
-    onInput(newValue) {
-      this.$emit("input", newValue);
+    onInput(event) {
+      this.$emit("input", event.target.value);
     }
   }
 };

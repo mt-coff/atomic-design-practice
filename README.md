@@ -1,5 +1,7 @@
 # atomic-design-practice
 
+This project is my Atomic Design practice project. I'm a biginner for Atomic Design :)
+
 ## Project setup
 
 ```
